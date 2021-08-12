@@ -36,6 +36,7 @@ export class EmployeeDashBoardComponent implements OnInit {
     .subscribe(res=>{
       console.log(res);
       alert("Employee added SuccessFully");
+      this.formValue.reset();
     },
     err=>{
       alert("Something went wrong");
